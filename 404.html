@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — OG GROUP</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#101113">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page404{
+    position:relative;min-height:100svh;display:flex;flex-direction:column;
+    justify-content:space-between;overflow:hidden;
+    background:var(--ink);color:var(--paper);
+    padding:calc(var(--nav-h) + 2rem) var(--gutter) 2rem;
+  }
+  .page404__phoenix{
+    position:absolute;right:3%;top:50%;transform:translateY(-50%);
+    width:min(40vw,540px);color:var(--silver);opacity:.25;pointer-events:none;
+  }
+  .page404__phoenix svg{width:100%;height:auto;display:block}
+  .page404__phoenix path{vector-effect:non-scaling-stroke}
+  .page404__code{
+    font-family:var(--font-display);font-weight:300;font-size:.75rem;
+    letter-spacing:.3em;color:var(--steel);
+  }
+  .page404__title{
+    position:relative;z-index:1;max-width:22ch;
+    font-size:clamp(2.2rem,5.4vw,4.6rem);line-height:1.02;letter-spacing:-.04em;
+    margin:clamp(1.5rem,4vw,3rem) 0 1.5rem;
+  }
+  .page404__text{position:relative;z-index:1;max-width:44ch;color:var(--silver);
+    font-size:1rem;line-height:1.6;margin-bottom:2.5rem}
+  .page404__links{position:relative;z-index:1;display:flex;gap:1rem;flex-wrap:wrap}
+  .page404__top{display:flex;justify-content:space-between;align-items:center}
+  .page404__mark{width:44px;color:var(--paper)}
+  .page404__foot{display:flex;justify-content:space-between;align-items:baseline;
+    border-top:1px solid var(--line-dark);padding-top:1.1rem;margin-top:3rem;
+    font-family:var(--font-display);font-size:.625rem;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--steel)}
+  @media (max-width:700px){
+    .page404__phoenix{width:110vw;right:-40%;opacity:.2}
+  }
+</style>
+</head>
+<body>
+<div class="page404">
+  <div class="page404__phoenix" aria-hidden="true">
+    <svg viewBox="0 52 200 96" fill="none" stroke="currentColor" stroke-width="1.5"
+        stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true">
+        <path d="M84 136 L16 68"/>
+        <path d="M84 124 L24 64"/>
+        <path d="M84 112 L37 65"/>
+        <path d="M84 100 L53 69"/>
+        <path d="M116 136 L184 68"/>
+        <path d="M116 124 L176 64"/>
+        <path d="M116 112 L163 65"/>
+        <path d="M116 100 L147 69"/>
+      </svg>
+  </div>
+
+  <header class="page404__top">
+    <a href="index.html" aria-label="OG GROUP — на главную">
+      <svg viewBox="0 0 212 100" class="page404__mark" aria-hidden="true">
+        <circle cx="50" cy="50" r="43.5" fill="none" stroke="currentColor" stroke-width="13"/>
+        <path d="M 205.18 55.30 A 43.5 43.5 0 1 1 201.42 31.62" fill="none" stroke="currentColor" stroke-width="13"/>
+        <rect x="160" y="43.5" width="52" height="13" fill="currentColor"/>
+      </svg>
+    </a>
+    <span class="page404__code">404</span>
+  </header>
+
+  <main>
+    <h1 class="page404__title">Страница не найдена</h1>
+    <p class="page404__text">Но система продолжает работать. Вернитесь на главную
+      или посмотрите проекты — они на месте.</p>
+    <div class="page404__links">
+      <a class="btn btn--solid" href="index.html"><span class="btn__label">На главную</span></a>
+      <a class="btn btn--ghost" href="index.html#works"><span class="btn__label">Проекты</span></a>
+    </div>
+  </main>
+
+  <footer class="page404__foot">
+    <span>OG Group · Brand book 1.0</span>
+    <span>Phoenix · a quiet signature</span>
+  </footer>
+</div>
+</body>
+</html>
